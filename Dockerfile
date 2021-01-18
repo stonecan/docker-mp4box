@@ -1,9 +1,9 @@
-FROM ubuntu:14.04
+FROM debian:testing
 
 RUN apt-get update && \
     apt-get install -y wget gdebi && \
-    wget http://download.tsi.telecom-paristech.fr/gpac/release/0.6.1/gpac_0.6.1_amd64.deb && \ 
-    gdebi --non-interactive gpac_0.6.1_amd64.deb && \
+    wget https://download.tsi.telecom-paristech.fr/gpac/new_builds/linux64/gpac/gpac_1.1.0-DEV-latest-master_amd64.deb && \ 
+    gdebi --non-interactive gpac_1.1.0-DEV-latest-master_amd64.deb && \
     mkdir /work
 
 WORKDIR /work
