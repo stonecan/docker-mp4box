@@ -3,7 +3,7 @@
 http://gpac.io/mp4box/
 
 ```
-MP4Box - GPAC version 0.6.1-rev14-g8eb0297-master
+MP4Box - GPAC version gpac_1.1.0-DEV-latest-master_amd64.deb
 ```
 
 ## Example
@@ -11,5 +11,5 @@ MP4Box - GPAC version 0.6.1-rev14-g8eb0297-master
 If example.mp4 exists in the current directory,
 
 ```
-docker run --rm -v `pwd`:/work sambaiz/mp4box -dash 1000 example.mp4 
+docker run --rm -v `pwd`:/work stonecan/docker-mp4box -dash 1000 example.mp4 
 ```
