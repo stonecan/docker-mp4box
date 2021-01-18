@@ -1,7 +1,7 @@
 FROM debian:testing
 
 RUN apt-get update && \
-    apt-get install gpac && \
+    apt-get -y install gpac && \
     mkdir /work
 
 WORKDIR /work
